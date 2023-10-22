@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{int  r,i,n,g,c,f1=1,f2=1,f3=1;
+clrscr();
+printf("enter the value of r and n");
+scanf("%d%d",&r,&n);
+c=n-r;
+if (n<r)
+{printf(" n need to be grater then r");}
+else {
+for (i=1;i<=n;i++)
+{f1=f1*i;
+}
+for (i=1;i<=r;i++)
+{f2=f2*i;
+}
+for (i=1;i<=c;i++)
+{f3=f3*i;}
+g=f1/(f2*f3);
+printf("%d",g);}
+getche();
+}
